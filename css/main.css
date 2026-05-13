@@ -4,11 +4,11 @@
 
 /* ─── Variables ─────────────────────────────────────────── */
 :root {
-  --bg:           #0F1E0C;
-  --bg-2:         #0B1809;
-  --surface:      #142110;
-  --card:         #192817;
-  --card-hover:   #1F311C;
+  --bg:           #1E3418;
+  --bg-2:         #192C13;
+  --surface:      #25401E;
+  --card:         #2C4C25;
+  --card-hover:   #34582C;
   --border:       rgba(201, 160, 80, 0.11);
   --border-hover: rgba(201, 160, 80, 0.25);
 
@@ -222,7 +222,7 @@ em { font-style: italic; color: var(--gold-warm); }
 }
 
 .nav.scrolled {
-  background: rgba(18, 23, 16, 0.94);
+  background: rgba(25, 44, 19, 0.96);
   border-color: var(--border);
   backdrop-filter: blur(14px);
 }
@@ -285,7 +285,7 @@ em { font-style: italic; color: var(--gold-warm); }
   flex-direction: column;
   gap: 1.5rem;
   padding: 2rem var(--pad-x);
-  background: rgba(12, 16, 10, 0.97);
+  background: rgba(20, 38, 15, 0.98);
   border-top: 1px solid var(--border);
 }
 
@@ -325,7 +325,7 @@ em { font-style: italic; color: var(--gold-warm); }
     radial-gradient(ellipse at 75% 22%, rgba(55, 95, 50, 0.35) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 50%, rgba(30, 42, 26, 0.6) 0%, transparent 65%),
     radial-gradient(ellipse at 50% 120%, rgba(8, 12, 6, 0.95) 0%, transparent 50%),
-    linear-gradient(155deg, #0C1009 0%, #131A10 30%, #1C2418 60%, #111508 100%);
+    linear-gradient(155deg, #162A12 0%, #1E3418 30%, #283E22 60%, #1A2E14 100%);
   animation: ken-burns 40s ease-out forwards;
 }
 
@@ -356,8 +356,8 @@ em { font-style: italic; color: var(--gold-warm); }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(18, 23, 16, 1) 0%, rgba(18, 23, 16, 0.55) 35%, rgba(18, 23, 16, 0.1) 65%, transparent 80%),
-    linear-gradient(to right, rgba(18, 23, 16, 0.55) 0%, transparent 60%);
+    linear-gradient(to top, rgba(30, 52, 24, 1) 0%, rgba(30, 52, 24, 0.55) 35%, rgba(30, 52, 24, 0.1) 65%, transparent 80%),
+    linear-gradient(to right, rgba(30, 52, 24, 0.55) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -1127,6 +1127,26 @@ em { font-style: italic; color: var(--gold-warm); }
   text-transform: uppercase;
 }
 
+.journal__photos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+  margin-bottom: 3px;
+}
+
+.journal__photo {
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.journal__photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.35) 100%);
+}
+
 .journal__facts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1440,6 +1460,7 @@ em { font-style: italic; color: var(--gold-warm); }
   .footer__links { grid-template-columns: repeat(2, 1fr); }
   .lead-capture__inner { grid-template-columns: 1fr; }
   .testimonials { grid-template-columns: 1fr; }
+  .journal__photos { grid-template-columns: repeat(3, 1fr); }
   .journal__facts { grid-template-columns: 1fr 1fr; }
 }
 
