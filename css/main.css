@@ -4,11 +4,11 @@
 
 /* ─── Variables ─────────────────────────────────────────── */
 :root {
-  --bg:           #121710;
-  --bg-2:         #0E1209;
-  --surface:      #171D14;
-  --card:         #1C2319;
-  --card-hover:   #222B1E;
+  --bg:           #0F1E0C;
+  --bg-2:         #0B1809;
+  --surface:      #142110;
+  --card:         #192817;
+  --card-hover:   #1F311C;
   --border:       rgba(201, 160, 80, 0.11);
   --border-hover: rgba(201, 160, 80, 0.25);
 
@@ -17,10 +17,10 @@
   --gold-dim:     rgba(201, 160, 80, 0.38);
   --gold-glow:    rgba(201, 160, 80, 0.10);
 
-  --cream:        #F0E6D3;
-  --cream-dim:    #C0B09A;
-  --muted:        #7A7264;
-  --dim:          #3A3530;
+  --cream:        #F5EDE0;
+  --cream-dim:    #D4C4AE;
+  --muted:        #A09080;
+  --dim:          #4A4540;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'DM Sans', system-ui, sans-serif;
