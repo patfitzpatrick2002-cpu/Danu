@@ -125,6 +125,17 @@ document.querySelectorAll('.sauna-card').forEach(card => {
   });
 });
 
+// ─── Lead capture photo label update ──────────────────────
+const lcPhoto = document.getElementById('lc-photo');
+const lcUploadText = document.querySelector('#lcUploadLabel .form-upload__text');
+
+lcPhoto?.addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (file && lcUploadText) {
+    lcUploadText.innerHTML = `<strong>${file.name}</strong>`;
+  }
+});
+
 // ─── Hero scroll fade ──────────────────────────────────────
 const heroContent = document.querySelector('.hero__content');
 const heroScroll  = document.querySelector('.hero__scroll-indicator');
