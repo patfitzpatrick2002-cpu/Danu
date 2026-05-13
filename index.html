@@ -342,14 +342,92 @@
     </section>
 
 
+    <!-- ═══ LEAD CAPTURE ═══ -->
+    <section class="lead-capture" id="submit-garden" aria-labelledby="lead-heading">
+      <div class="lead-capture__inner">
+
+        <div class="lead-capture__copy reveal">
+          <p class="eyebrow">FREE CGI VISUALISATION</p>
+          <h2 id="lead-heading">Send us<br><em>your garden.</em></h2>
+          <p class="body-text">Upload a photo of your outdoor space and our team will CGI your chosen Danu sauna directly into the scene — free, personal, and back with you within 48 hours.</p>
+          <ul class="visualiser__list lead-capture__list" role="list">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6.3" stroke="currentColor" stroke-width="0.8"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Personal CGI — not AI-generated
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6.3" stroke="currentColor" stroke-width="0.8"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Any garden, any angle, any size
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6.3" stroke="currentColor" stroke-width="0.8"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Free, no commitment required
+            </li>
+          </ul>
+        </div>
+
+        <form class="lead-capture__form reveal reveal-delay-1" action="#" method="post" novalidate>
+          <div class="form-row form-row--split">
+            <div class="form-field">
+              <label for="lc-email">Email Address</label>
+              <input type="email" id="lc-email" name="email" placeholder="hello@example.com" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="lc-phone">Phone Number</label>
+              <input type="tel" id="lc-phone" name="phone" placeholder="+44 or +353" autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="lc-model">Sauna Model</label>
+            <select id="lc-model" name="model">
+              <option value="">Any — help me choose</option>
+              <option>Aurora Barrel</option>
+              <option>Solace Cube</option>
+              <option>Panorama Lodge</option>
+              <option>Mira Pod</option>
+              <option>Hearth Cabin</option>
+              <option>Smoke Heritage</option>
+              <option>Ember Outdoor</option>
+              <option>Stillwater Indoor</option>
+              <option>Twilight Barrel XL</option>
+              <option>Kinfolk Family</option>
+              <option>Glow Panoramic</option>
+              <option>Nomad Tent</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>Garden Photo</label>
+            <label class="form-upload" for="lc-photo" id="lcUploadLabel">
+              <div class="form-upload__corner form-upload__corner--tl"></div>
+              <div class="form-upload__corner form-upload__corner--tr"></div>
+              <div class="form-upload__corner form-upload__corner--bl"></div>
+              <div class="form-upload__corner form-upload__corner--br"></div>
+              <svg width="28" height="28" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                <path d="M20 8v16M12 14l8-8 8 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 28v4a2 2 0 002 2h24a2 2 0 002-2v-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+              <span class="form-upload__text">Drop photo here or <strong>browse</strong></span>
+              <span class="form-upload__hint">JPG, PNG, HEIC · any size</span>
+              <input type="file" id="lc-photo" name="photo" accept="image/*" class="form-upload__input">
+            </label>
+          </div>
+          <button type="submit" class="btn btn--gold form-submit">Request My Free Visualisation</button>
+          <p class="form-note">We'll send your personalised render within 48 hours. No sales pressure — ever.</p>
+        </form>
+
+      </div>
+    </section>
+
+
     <!-- ═══ VISUALISER ═══ -->
     <section class="visualiser" id="visualiser" aria-labelledby="visualiser-heading">
       <div class="visualiser__inner">
 
         <div class="visualiser__copy reveal">
           <p class="eyebrow">THE GARDEN VISUALISER</p>
-          <h2 id="visualiser-heading">See it in<br><em>your space.</em></h2>
-          <p class="body-text">Drop a photo of your garden. We'll show you exactly how your Danu sauna will look — before you spend a single pound.</p>
+          <span class="coming-soon-badge">Coming Soon</span>
+          <h2 id="visualiser-heading">See what your<br><em>future sauna</em><br>looks like.</h2>
+          <p class="body-text">We're building a real-time visualiser so you can drop any photo and see your sauna in place instantly. Until then, use the form above and our team will do it for you personally.</p>
           <ul class="visualiser__list" role="list">
             <li>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6.3" stroke="currentColor" stroke-width="0.8"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -478,6 +556,82 @@
               </div>
             </div>
           </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══ JOURNAL ═══ -->
+    <section class="journal" id="journal" aria-labelledby="journal-heading">
+      <div class="journal__inner">
+
+        <div class="section-header reveal">
+          <p class="eyebrow">JOURNAL</p>
+          <h2 id="journal-heading">Heat. Rest.<br><em>Repeat.</em></h2>
+          <p class="section-intro">Stories, science, and the ancient ritual of warmth. From our team and our customers.</p>
+        </div>
+
+        <div class="testimonials">
+
+          <article class="testimonial reveal" aria-label="Customer testimonial">
+            <div class="testimonial__img" style="background: linear-gradient(145deg,#1A2018 0%,#2D3B2C 55%,#1A1509 100%)" aria-hidden="true"></div>
+            <div class="testimonial__body">
+              <div class="testimonial__quote" aria-hidden="true">"</div>
+              <p class="testimonial__text">We've had our Aurora Barrel for eight months now and it's completely changed how we spend winter evenings. The installation team were exceptional — done in a single day, no mess, everything perfect. We use it four nights a week.</p>
+              <footer class="testimonial__footer">
+                <span class="testimonial__name">Siobhan &amp; Cormac D.</span>
+                <span class="testimonial__loc">County Clare, Ireland</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="testimonial reveal reveal-delay-1" aria-label="Customer testimonial">
+            <div class="testimonial__img" style="background: linear-gradient(145deg,#1A1509 0%,#2D3B2C 55%,#1A2018 100%)" aria-hidden="true"></div>
+            <div class="testimonial__body">
+              <div class="testimonial__quote" aria-hidden="true">"</div>
+              <p class="testimonial__text">The Panorama Lodge is extraordinary. Watching the garden through the full-glass front while the heat wraps around you — there's truly nothing like it. Our guests always ask about it. Worth every single penny.</p>
+              <footer class="testimonial__footer">
+                <span class="testimonial__name">James T.</span>
+                <span class="testimonial__loc">Edinburgh, Scotland</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="testimonial reveal reveal-delay-2" aria-label="Customer testimonial">
+            <div class="testimonial__img" style="background: linear-gradient(145deg,#1A1208 0%,#2A2010 55%,#1A2018 100%)" aria-hidden="true"></div>
+            <div class="testimonial__body">
+              <div class="testimonial__quote" aria-hidden="true">"</div>
+              <p class="testimonial__text">I was sceptical about a wood-burning sauna but the Hearth Cabin is genuinely magical. The ritual of lighting it, the smell of the timber, the slow build of heat — it's become the favourite part of my week. Total game changer.</p>
+              <footer class="testimonial__footer">
+                <span class="testimonial__name">Rachel M.</span>
+                <span class="testimonial__loc">Bristol, England</span>
+              </footer>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="journal__facts">
+
+          <div class="fact-card reveal">
+            <span class="fact-card__num">20 min</span>
+            <h4>Reset your nervous system</h4>
+            <p>Twenty minutes in a sauna reduces cortisol levels by up to 32%. Heat exposure triggers the release of endorphins — your body's natural mechanism for dissolving stress at a physiological level.</p>
+          </div>
+
+          <div class="fact-card reveal reveal-delay-1">
+            <span class="fact-card__num">3×</span>
+            <h4>Deeper, longer sleep</h4>
+            <p>Regular sauna use has been shown to improve deep sleep duration by up to three times. The post-heat cool-down drops your core temperature sharply — the same signal your body uses to initiate deep sleep.</p>
+          </div>
+
+          <div class="fact-card reveal reveal-delay-2">
+            <span class="fact-card__num">10,000</span>
+            <h4>Years of practice</h4>
+            <p>The sauna tradition dates back over ten millennia. It is one of the oldest wellness practices in human history — and modern science is only now beginning to quantify what our ancestors understood instinctively.</p>
+          </div>
+
         </div>
 
       </div>
