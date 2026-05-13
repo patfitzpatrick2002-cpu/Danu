@@ -865,24 +865,27 @@ em { font-style: italic; color: var(--gold-warm); }
 }
 
 .lead-capture__inner {
-  max-width: var(--max-w);
+  max-width: 720px;
   margin: 0 auto;
   padding: 0 var(--pad-x);
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: clamp(3rem, 7vw, 7rem);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
 }
 
-.lead-capture__copy { max-width: 36ch; }
+.lead-capture__copy { max-width: 52ch; }
 .lead-capture__copy h2 { margin-bottom: 1.25rem; }
-.lead-capture__copy .body-text { margin-bottom: 2rem; }
-.lead-capture__list { margin-top: 0; }
+.lead-capture__copy .body-text { margin: 0 auto 2rem; max-width: 44ch; }
+.lead-capture__list { margin-top: 0; justify-content: center; flex-direction: row; flex-wrap: wrap; gap: 1.5rem; }
 
 .lead-capture__form {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.75rem;
+  width: 100%;
+  text-align: left;
 }
 
 .form-row--split {
@@ -908,14 +911,15 @@ em { font-style: italic; color: var(--gold-warm); }
 
 .form-field input,
 .form-field select {
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
   color: var(--cream);
   font-family: var(--font-body);
-  font-size: 0.88rem;
-  padding: 0.85rem 1.1rem;
+  font-size: 0.95rem;
+  padding: 0.75rem 0;
   outline: none;
-  transition: border-color 0.25s;
+  transition: border-color 0.3s;
   appearance: none;
   -webkit-appearance: none;
   width: 100%;
@@ -924,13 +928,13 @@ em { font-style: italic; color: var(--gold-warm); }
 .form-field input::placeholder { color: var(--dim); }
 
 .form-field input:focus,
-.form-field select:focus { border-color: var(--gold-dim); }
+.form-field select:focus { border-bottom-color: var(--gold); }
 
 .form-field select {
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7264' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 1.1rem center;
-  padding-right: 2.5rem;
+  background-position: right 0.25rem center;
+  padding-right: 1.5rem;
   cursor: pointer;
 }
 
