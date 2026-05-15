@@ -668,6 +668,30 @@
       </div>
     </section>
 
+    <!-- ═══ SAUNA MODAL ═══ -->
+    <div class="sauna-modal" id="saunaModal" role="dialog" aria-modal="true" aria-labelledby="modalName" hidden>
+      <div class="sauna-modal__backdrop"></div>
+      <div class="sauna-modal__panel">
+        <button class="sauna-modal__close" aria-label="Close">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <path d="M1 1l11 11M12 1L1 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="sauna-modal__visual" id="modalVisual">
+          <img id="modalImg" alt="" class="sauna-modal__img">
+        </div>
+        <div class="sauna-modal__body">
+          <div class="sauna-modal__meta" id="modalMeta"></div>
+          <h2 class="sauna-modal__name" id="modalName"></h2>
+          <p class="sauna-modal__desc" id="modalDesc"></p>
+          <div class="sauna-modal__footer">
+            <span class="sauna-modal__price" id="modalPrice"></span>
+            <a href="#contact" class="btn btn--gold">Book Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
 
