@@ -108,6 +108,71 @@ retryBtn?.addEventListener('click', () => {
   showState('idle');
 });
 
+// ─── Sauna modal ───────────────────────────────────────────
+const saunaModal    = document.getElementById('saunaModal');
+const modalVisual   = document.getElementById('modalVisual');
+const modalImg      = document.getElementById('modalImg');
+const modalMeta     = document.getElementById('modalMeta');
+const modalName     = document.getElementById('modalName');
+const modalDesc     = document.getElementById('modalDesc');
+const modalPrice    = document.getElementById('modalPrice');
+const modalClose    = document.querySelector('.sauna-modal__close');
+const modalBackdrop = document.querySelector('.sauna-modal__backdrop');
+
+function openSaunaModal(card) {
+  const visual  = card.querySelector('.sauna-card__visual');
+  const img     = visual?.querySelector('img');
+  const metas   = card.querySelectorAll('.sauna-card__meta span');
+  const name    = card.querySelector('h3')?.textContent?.trim();
+  const desc    = card.querySelector('.sauna-card__body > p')?.textContent?.trim();
+  const price   = card.querySelector('.sauna-card__price')?.textContent?.trim();
+
+  modalVisual.style.background = visual?.style?.background || '';
+  if (img?.src && !img.src.endsWith('#') && !img.src.endsWith('/')) {
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    modalImg.style.display = 'block';
+    modalImg.onerror = () => { modalImg.style.display = 'none'; };
+  } else {
+    modalImg.style.display = 'none';
+  }
+
+  modalMeta.innerHTML    = [...metas].map(s => `<span>${s.textContent.trim()}</span>`).join('');
+  modalName.textContent  = name  || '';
+  modalDesc.textContent  = desc  || '';
+  modalPrice.textContent = price || '';
+
+  saunaModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+
+  const panel = saunaModal.querySelector('.sauna-modal__panel');
+  panel.style.animation = 'none';
+  void panel.offsetWidth;
+  panel.style.animation = '';
+}
+
+function closeSaunaModal() {
+  saunaModal.hidden = true;
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.sauna-card').forEach(card => {
+  card.addEventListener('click', e => {
+    const link = e.target.closest('a');
+    if (link && (link.getAttribute('href') === '#' || link.classList.contains('sauna-card__visual'))) {
+      e.preventDefault();
+      openSaunaModal(card);
+    }
+  });
+});
+
+modalClose?.addEventListener('click', closeSaunaModal);
+modalBackdrop?.addEventListener('click', closeSaunaModal);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !saunaModal?.hidden) closeSaunaModal();
+});
+
 // ─── Sauna card hover — subtle parallax on visual ──────────
 document.querySelectorAll('.sauna-card').forEach(card => {
   const visual = card.querySelector('.sauna-card__visual');
