@@ -1140,6 +1140,13 @@ em { font-style: italic; color: var(--gold-warm); }
   overflow: hidden;
 }
 
+.journal__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .journal__photo::after {
   content: '';
   position: absolute;
