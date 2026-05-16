@@ -366,7 +366,10 @@
           </ul>
         </div>
 
-        <form class="lead-capture__form reveal reveal-delay-1" action="#" method="post" novalidate>
+        <form class="lead-capture__form reveal reveal-delay-1" action="https://formsubmit.co/patfitzpatrick2002@gmail.com" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New CGI Visualisation Request — Danu Saunas">
+          <input type="hidden" name="_next" value="https://patfitzpatrick2002-cpu.github.io/Danu/">
+          <input type="hidden" name="_captcha" value="false">
           <div class="form-row form-row--split">
             <div class="form-field">
               <label for="lc-email">Email Address</label>
@@ -702,18 +705,60 @@
     </section>
 
 
-    <!-- ═══ FINAL CTA ═══ -->
-    <section class="cta-section" id="contact" aria-label="Call to action">
+    <!-- ═══ CONTACT ═══ -->
+    <section class="cta-section" id="contact" aria-labelledby="contact-heading">
       <div class="cta-section__glow" aria-hidden="true"></div>
       <div class="cta-section__inner reveal">
         <p class="eyebrow">READY TO BEGIN</p>
-        <h2>Your garden.<br><em>Transformed.</em></h2>
-        <p class="body-text">Book a free consultation and we'll help you find the right sauna for your space, budget, and vision.</p>
-        <div class="cta-section__btns">
-          <a href="#" class="btn btn--gold">Book Free Consultation</a>
-          <a href="#visualiser" class="btn btn--ghost">Try the Visualiser first</a>
-        </div>
-        <p class="cta-section__note">Free delivery &amp; installation &nbsp;·&nbsp; UK &amp; Ireland &nbsp;·&nbsp; 5-year warranty</p>
+        <h2 id="contact-heading">Your garden.<br><em>Transformed.</em></h2>
+        <p class="body-text">Tell us about your space and we'll be in touch within 24 hours. Free consultation, no obligation.</p>
+
+        <form class="contact-form" action="https://formsubmit.co/patfitzpatrick2002@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Consultation Request — Danu Saunas">
+          <input type="hidden" name="_next" value="https://patfitzpatrick2002-cpu.github.io/Danu/">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="contact-form__row">
+            <div class="form-field">
+              <label for="cf-name">Full Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" name="email" placeholder="hello@example.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="form-field">
+              <label for="cf-phone">Phone Number</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+44 or +353" autocomplete="tel">
+            </div>
+            <div class="form-field">
+              <label for="cf-model">Sauna Model (optional)</label>
+              <select id="cf-model" name="model">
+                <option value="">Any — help me choose</option>
+                <option>Aurora Barrel</option>
+                <option>Solace Cube</option>
+                <option>Panorama Lodge</option>
+                <option>Mira Pod</option>
+                <option>Hearth Cabin</option>
+                <option>Smoke Heritage</option>
+                <option>Ember Outdoor</option>
+                <option>Stillwater Indoor</option>
+                <option>Twilight Barrel XL</option>
+                <option>Kinfolk Family</option>
+                <option>Glow Panoramic</option>
+                <option>Nomad Tent</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="cf-message">Tell us about your space</label>
+            <textarea id="cf-message" name="message" placeholder="Garden size, any questions, timeline…" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold contact-form__submit">Send Enquiry</button>
+          <p class="form-note">We'll be in touch within 24 hours. &nbsp;·&nbsp; Free delivery &amp; installation &nbsp;·&nbsp; UK &amp; Ireland</p>
+        </form>
       </div>
     </section>
 
