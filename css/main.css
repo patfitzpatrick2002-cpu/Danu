@@ -1410,6 +1410,48 @@ em { font-style: italic; color: var(--gold-warm); }
   margin-bottom: 2rem;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 640px;
+  margin: 2.5rem auto 0;
+  text-align: left;
+}
+
+.contact-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.75rem 0;
+  outline: none;
+  resize: none;
+  width: 100%;
+  transition: border-color 0.3s;
+  line-height: 1.6;
+}
+
+.contact-form textarea:focus { border-bottom-color: var(--gold); }
+.contact-form textarea::placeholder { color: var(--dim); }
+
+.contact-form__submit {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 0.65rem;
+  border: none;
+  cursor: pointer;
+}
+
 .cta-section__note {
   font-size: 0.62rem;
   letter-spacing: 0.18em;
@@ -1675,6 +1717,7 @@ em { font-style: italic; color: var(--gold-warm); }
   .hero__ctas { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
   .cta-section__btns { flex-direction: column; align-items: center; }
   .form-row--split { grid-template-columns: 1fr; }
+  .contact-form__row { grid-template-columns: 1fr; }
   .journal__facts { grid-template-columns: 1fr; }
   .sauna-modal__panel { grid-template-columns: 1fr; overflow-y: auto; }
   .sauna-modal__visual { min-height: 220px; }
